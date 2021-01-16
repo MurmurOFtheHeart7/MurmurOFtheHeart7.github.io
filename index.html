@@ -168,12 +168,13 @@
 <hr>
 <h2 id="Hexo基础使用说明"><a href="#Hexo基础使用说明" class="headerlink" title="Hexo基础使用说明"></a>Hexo基础使用说明</h2><hr>
 <hr>
-<p>Hexo官方使用说明就是最好的教程。<br><a href="dmzecho.github.io">Hexo中文官网</a><br>可以根据<strong>文档</strong>中的信息完成安装部署等一系列操作。</p>
+<p>Hexo官方使用说明就是最好的教程。<br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo中文官网</a><br>可以根据<strong>文档</strong>中的信息完成安装部署等一系列操作。</p>
 <hr>
 <h4 id="Hexo常用指令"><a href="#Hexo常用指令" class="headerlink" title="Hexo常用指令"></a>Hexo常用指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g       &#x2F;&#x2F;生成静态网页</span><br><span class="line">$ hexo server  &#x2F;&#x2F;启动服务</span><br><span class="line">$ hexo d       &#x2F;&#x2F;部署</span><br></pre></td></tr></table></figure>
 <p>注：这些命令都要在本地库中进行才是有效的。如果不能识别hexo指令，可以在前面加上npx。</p>
 <hr>
-<p>部署Hexo时，我们可能需要一些<strong>ssh密钥</strong>方面的知识。具体的操作步骤，可以参考如下的几篇文章。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/jiayoudangdang/article/details/79477860">ubuntu16.04如何生成ssh密钥以及如何查看ssh密钥</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/jiayoudangdang/article/details/79477860">ubuntu系统中使用ssh生成密钥并保存在不同的文件</a><br>ubuntu的密钥保存在~/.ssh文件夹中。</p>
+<p>部署Hexo时，我们可能需要一些<strong>ssh密钥</strong>方面的知识。具体的操作步骤，可以参考如下的几篇文章。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/jiayoudangdang/article/details/79477860">ubuntu16.04如何生成ssh密钥以及如何查看ssh密钥</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/jiayoudangdang/article/details/79477860">ubuntu系统中使用ssh生成密钥并保存在不同的文件</a></p>
+<p>注：ubuntu的密钥保存在~/.ssh文件夹中。</p>
 <hr>
 <h4 id="生成新的ssh密钥"><a href="#生成新的ssh密钥" class="headerlink" title="生成新的ssh密钥"></a>生成新的ssh密钥</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br><span class="line">your_email@example.com 为你在 GitHub或者GitLab 注册时的邮箱。</span><br></pre></td></tr></table></figure>
 <p>回车后会显示：</p>
