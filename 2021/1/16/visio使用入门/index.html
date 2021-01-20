@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
-
 <head>
-  
-  <title>visio使用入门 - Hexo</title>
   <meta charset="UTF-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  
-  
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
   <meta name="description" content="一、visio基础操作visio作为office家族的一员，操作并不复杂。只要熟悉office的其他几款应用，例如word等，就会很容易上手。 1. 添加图形我们只需选择想要的图形，将其拖拽到相应的位置即可。  2. 改变图形大小与旋转在指针工具模式下，选中需要修改的图形，就可以修改大小以及旋转。  3. 图形水平与垂直翻转在 开始-位置-旋转形状 中。  4. 图形组合如果我们同时要对多个图形">
 <meta property="og:type" content="article">
 <meta property="og:title" content="visio使用入门">
@@ -36,222 +44,376 @@
 <meta property="article:author" content="Qixin Lu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio4.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
-  
-  <link rel="stylesheet" href="/css/style.css?v=1611110595790">
-<meta name="generator" content="Hexo 5.3.0"></head>
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="Qixin Lu" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Qixin Lu"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="Qixin Lu">
-            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Qixin Lu" alt="Qixin Lu">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>文章</span>14</div>
-        <div><span>标签</span>0</div>
-        <div><span>分类</span>0</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章目录">
-            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
-            <div class="mdui-list-item-content">
-                文章目录
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
-        </form>
-    </div>
-</div>
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
-            <i class="nexmoefont icon-QQ"></i>
-        </a><a class="mdui-ripple" href="https://space.bilibili.com/304234619" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
+<link rel="canonical" href="http://example.com/2021/1/16/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>visio使用入门 | Hexo</title>
   
 
-  
-  
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">文章归档</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">14</span></li></ul>
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
+  <div class="site-meta">
 
-<style>
-.nexmoe-widget .archive-list-count{
-	position : absolute;
-	right: 15px;
-	top:9px;
-	color: #DDD;
-}
-</style>
-
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2021 Qixin Lu
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
-    </div>
-</div><!-- .nexmoe-drawer -->
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
   </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <div class="nexmoe-post">
-  
-      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="visio使用入门" class="lazyload">
-          <h1>visio使用入门</h1>
-      </div>
-  
-  
-  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2021年01月16日</a>
-    <a><i class="nexmoefont icon-areachart"></i>676 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
 </div>
 
-  <div class="nexmoe-post-right">
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
     
-      <div class="nexmoe-fixed">
-        <div class="nexmoe-valign">
-            <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81visio%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">一、visio基础操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%9B%BE%E5%BD%A2"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. 添加图形</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%94%B9%E5%8F%98%E5%9B%BE%E5%BD%A2%E5%A4%A7%E5%B0%8F%E4%B8%8E%E6%97%8B%E8%BD%AC"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. 改变图形大小与旋转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%9B%BE%E5%BD%A2%E6%B0%B4%E5%B9%B3%E4%B8%8E%E5%9E%82%E7%9B%B4%E7%BF%BB%E8%BD%AC"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. 图形水平与垂直翻转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%9B%BE%E5%BD%A2%E7%BB%84%E5%90%88"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 图形组合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E8%BF%9E%E6%8E%A5%E7%BA%BF"><span class="toc-number">1.0.5.</span> <span class="toc-text">5. 连接线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E9%87%8D%E6%96%B0%E5%B8%83%E5%B1%80%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.0.6.</span> <span class="toc-text">6. 重新布局页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E7%9B%B4%E7%BA%BF"><span class="toc-number">1.0.7.</span> <span class="toc-text">7. 直线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-%E8%87%AA%E5%8A%A8%E7%B2%98%E9%99%84%E4%B8%8E%E5%AF%B9%E9%BD%90"><span class="toc-number">1.0.8.</span> <span class="toc-text">8. 自动粘附与对齐</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81visio%E4%B8%8Eword%E4%BA%A4%E4%BA%92"><span class="toc-number">2.</span> <span class="toc-text">二、visio与word交互</span></a></li></ol>
-            </div>
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/1/16/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Qixin Lu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          visio使用入门
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-16 17:30:16" itemprop="dateCreated datePublished" datetime="2021-01-16T17:30:16+08:00">2021-01-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-19 20:42:48" itemprop="dateModified" datetime="2021-01-19T20:42:48+08:00">2021-01-19</time>
+              </span>
+
+          
+
         </div>
-      </div>
-    
-  </div>
+      </header>
 
-  <article>
-    <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
 <h2 id="一、visio基础操作"><a href="#一、visio基础操作" class="headerlink" title="一、visio基础操作"></a>一、visio基础操作</h2><p><strong>visio</strong>作为office家族的一员，操作并不复杂。只要熟悉office的其他几款应用，例如word等，就会很容易上手。</p>
 <h4 id="1-添加图形"><a href="#1-添加图形" class="headerlink" title="1. 添加图形"></a>1. 添加图形</h4><p>我们只需选择想要的图形，将其拖拽到相应的位置即可。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio4.png" alt="拖拽图形进行添加" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio4.png" alt="拖拽图形进行添加"></p>
 <h4 id="2-改变图形大小与旋转"><a href="#2-改变图形大小与旋转" class="headerlink" title="2. 改变图形大小与旋转"></a>2. 改变图形大小与旋转</h4><p>在指针工具模式下，选中需要修改的图形，就可以修改大小以及旋转。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio13.png" alt="旋转图形" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio13.png" alt="旋转图形"></p>
 <h4 id="3-图形水平与垂直翻转"><a href="#3-图形水平与垂直翻转" class="headerlink" title="3. 图形水平与垂直翻转"></a>3. 图形水平与垂直翻转</h4><p>在 <strong>开始-位置-旋转形状</strong> 中。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio8.png" alt="水平与垂直翻转" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio8.png" alt="水平与垂直翻转"></p>
 <h4 id="4-图形组合"><a href="#4-图形组合" class="headerlink" title="4. 图形组合"></a>4. 图形组合</h4><p>如果我们同时要对多个图形进行移动或者缩放，则需要将多个图形框选中，或者按住ctrl键进行点选，之后进行<strong>组合</strong>即可。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio9.png" alt="将多个图形进行组合" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio9.png" alt="将多个图形进行组合"></p>
 <h4 id="5-连接线"><a href="#5-连接线" class="headerlink" title="5. 连接线"></a>5. 连接线</h4><p>我们在画流程图或者结构图时，难免要对多个图形进行连线。此时我们只需点击 <strong>开始-连接线</strong> 进行连接即可。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio10.png" alt="连接线图标" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio10.png" alt="连接线图标"></p>
 <h4 id="6-重新布局页面"><a href="#6-重新布局页面" class="headerlink" title="6. 重新布局页面"></a>6. 重新布局页面</h4><p>画结构图或者流程图的过程中，凌乱的界面经常会把我们搞得心烦意乱，此时就需要 <strong>重新布局页面</strong> 来帮你。<br>当我们将结构图或者流程图画完并且将连接线也连接完成后，可以根据自己的需要，选取不同的页面布局，让visio自动帮你整理好页面。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio3.png" alt="重新布局页面" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio3.png" alt="重新布局页面"></p>
 <h4 id="7-直线"><a href="#7-直线" class="headerlink" title="7. 直线"></a>7. 直线</h4><p>在我看来直线不同于连接线，它算是一种图形，更加灵活多变。连接线生成的更快，但是约束较多。<br>直线工具在指针工具旁，里面还有弧形工具。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio7.png" alt="线条与弧" class="lazyload"><br>当然，直线作为一种图形，我们可以对它进行很多的修改，其中最常用的修改就是改变线条的粗细以及虚实。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio11.png" alt="线条粗细与虚实" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio7.png" alt="线条与弧"><br>当然，直线作为一种图形，我们可以对它进行很多的修改，其中最常用的修改就是改变线条的粗细以及虚实。</p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio11.png" alt="线条粗细与虚实"></p>
 <h4 id="8-自动粘附与对齐"><a href="#8-自动粘附与对齐" class="headerlink" title="8. 自动粘附与对齐"></a>8. 自动粘附与对齐</h4><p>很多时候我们使用visio并不是为了画结构图与流程图，而是用它画一些简单的示意图。这种时候，一些原本很方便的粘附与对齐功能可能会成为累赘。<br>想要开启或者关闭粘附与对齐功能，只需在 <strong>视图-视觉帮助-右下角</strong> 中开启和关闭相应的功能即可。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio12.png" alt="视觉帮助" class="lazyload"></p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio6.png" alt="自动对齐与粘附" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio12.png" alt="视觉帮助"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio6.png" alt="自动对齐与粘附"></p>
 <hr>
 <h2 id="二、visio与word交互"><a href="#二、visio与word交互" class="headerlink" title="二、visio与word交互"></a>二、visio与word交互</h2><p>首先我们要将visio文件进行保存，之后在word中找到 <strong>插入-对象</strong>，然后在 <strong>由文件创建</strong> 中点击 <strong>浏览</strong>，找到相应的visio文件即可。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio1.png" alt="对象" class="lazyload"></p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio2.png" alt="浏览" class="lazyload"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio1.png" alt="对象"></p>
+<p><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/visio2.png" alt="浏览"></p>
 <p>注：这种方式插入的visio图不会有失真的现象，但是在word中进行缩放时，visio图可能会失效。<br>   若是出现上述情况，只能老老实实将visio图另存为图片，再进行插入。这种方式可能会出现轻微的失真。</p>
 <hr>
 
-  </article>
-
-  
-    
-  <div class="nexmoe-post-copyright">
-    <strong>本文作者：</strong>Qixin Lu<br>
-    <strong>本文链接：</strong><a href="http://example.com/2021/1/16/visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/" title="http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;1&#x2F;16&#x2F;visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;1&#x2F;16&#x2F;visio%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8&#x2F;</a><br>
-    
-      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
-    
-  </div>
-
-
-  
-  
-  <div class="nexmoe-post-meta nexmoe-rainbow">
-    
-    
-</div>
-
-  <div class="nexmoe-post-footer">
-    <section class="nexmoe-comment">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
-<div id="gitalk"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '80b2453b6d5f37ad6225',
-        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
-        id: window.location.pathname,
-        repo: 'nexmoe.github.io',
-        owner: 'nexmoe',
-        admin: 'nexmoe'
-    })
-    gitalk.render('gitalk')
-</script>
-</section>
-  </div>
-</div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/1/15/Hexo%E6%93%8D%E4%BD%9C/" rel="prev" title="利用Hexo搭建博客">
+      <i class="fa fa-chevron-left"></i> 利用Hexo搭建博客
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/1/16/creo7-0-0%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/" rel="next" title="creo7.0.0从入门到入土">
+      creo7.0.0从入门到入土 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
 <script>
-	hljs.initHighlightingOnLoad();
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81visio%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">一、visio基础操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%9B%BE%E5%BD%A2"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 添加图形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%94%B9%E5%8F%98%E5%9B%BE%E5%BD%A2%E5%A4%A7%E5%B0%8F%E4%B8%8E%E6%97%8B%E8%BD%AC"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 改变图形大小与旋转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%9B%BE%E5%BD%A2%E6%B0%B4%E5%B9%B3%E4%B8%8E%E5%9E%82%E7%9B%B4%E7%BF%BB%E8%BD%AC"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 图形水平与垂直翻转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E5%9B%BE%E5%BD%A2%E7%BB%84%E5%90%88"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 图形组合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-%E8%BF%9E%E6%8E%A5%E7%BA%BF"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. 连接线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-%E9%87%8D%E6%96%B0%E5%B8%83%E5%B1%80%E9%A1%B5%E9%9D%A2"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. 重新布局页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-%E7%9B%B4%E7%BA%BF"><span class="nav-number">1.0.7.</span> <span class="nav-text">7. 直线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-%E8%87%AA%E5%8A%A8%E7%B2%98%E9%99%84%E4%B8%8E%E5%AF%B9%E9%BD%90"><span class="nav-number">1.0.8.</span> <span class="nav-text">8. 自动粘附与对齐</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81visio%E4%B8%8Eword%E4%BA%A4%E4%BA%92"><span class="nav-number">2.</span> <span class="nav-text">二、visio与word交互</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Qixin Lu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1611110595791"></script>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Qixin Lu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
 
   
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
 
 </body>
-
 </html>
