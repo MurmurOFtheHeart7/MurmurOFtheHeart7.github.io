@@ -178,7 +178,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-27 20:23:06" itemprop="dateModified" datetime="2021-03-27T20:23:06+08:00">2021-03-27</time>
+                <time title="修改时间：2021-03-28 18:42:20" itemprop="dateModified" datetime="2021-03-28T18:42:20+08:00">2021-03-28</time>
               </span>
 
           
@@ -556,10 +556,9 @@
 <li>常见问题</li>
 </ol>
 <ul>
-<li>windows空闲端口号查询方式</li>
+<li>windows空闲端口号查询方式<br>如下图所示，在cmd中使用指令查询所有端口号<br><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/qt%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%AB%AF%E5%8F%A3%E5%8F%B7%E6%9F%A5%E8%AF%A21.png" alt="查询所有端口号" title="端口号查询"><br>如下图所示，在cmd中使用指令查询所需端口号是否为空闲状态<br><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/qt%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%AB%AF%E5%8F%A3%E5%8F%B7%E6%9F%A5%E8%AF%A22.png" alt="查询端口号是否空闲"></li>
 </ul>
-<p>如下图所示，在cmd中使用指令查询所有端口号<br><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/rew/master/images/blog/qt%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%AB%AF%E5%8F%A3%E5%8F%B7%E6%9F%A5%E8%AF%A21.png" alt="查询所有端口号" title="端口号查询"></p>
-<p>如下图所示，在cmd中使用失灵查询所需端口号是否为空闲状态<br><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/rew/master/images/blog/qt%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%AB%AF%E5%8F%A3%E5%8F%B7%E6%9F%A5%E8%AF%A22.png" alt="查询端口号是否空闲"></p>
+<p>qt同时运行多个实例时，需要将<strong>工具-选项-构建和运行</strong>中的stop application before building设置为None<br><img src="https://gitee.com/lu-qixin/murmur-ofthe-heart7.gitee.io/raw/master/images/blog/qt%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%AE%BE%E7%BD%AE%E5%A4%9A%E5%AE%9E%E4%BE%8B%E8%BF%90%E8%A1%8C.png" alt="qt同时运行多个实例"></p>
 <p><strong>案例：基于TCP协议的网络聊天室</strong></p>
 <ul>
 <li>TCP服务器（Server）（服务器：IP、port固定）<br>使用QTcpServer创建服务器<br>响应客户端连接请求，保存和客户端通信套接字（socket）<br>实时接收客户端发来的消息<br>转发消息给所有的客户端</li>
